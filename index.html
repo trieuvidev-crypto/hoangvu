@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoang Vu — Link Bio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <svg class="loader__svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer rotating ring -->
+        <circle class="ring ring--outer" cx="60" cy="60" r="54" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="8 6"/>
+        <!-- Middle pulsing ring -->
+        <circle class="ring ring--mid" cx="60" cy="60" r="40" stroke="url(#ringGrad2)" stroke-width="1" stroke-dasharray="4 10"/>
+        <!-- Inner arc -->
+        <path class="ring ring--arc" d="M60 20 A40 40 0 1 1 20 60" stroke="url(#ringGrad3)" stroke-width="2" stroke-linecap="round"/>
+        <!-- Center dot -->
+        <circle class="loader__dot" cx="60" cy="60" r="5" fill="url(#dotGrad)"/>
+        <!-- Corner accents -->
+        <path class="corner c1" d="M10 30 L10 10 L30 10" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+        <path class="corner c2" d="M90 10 L110 10 L110 30" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+        <path class="corner c3" d="M110 90 L110 110 L90 110" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+        <path class="corner c4" d="M30 110 L10 110 L10 90" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="ringGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7c3aed"/>
+            <stop offset="1" stop-color="#06b6d4"/>
+          </linearGradient>
+          <linearGradient id="ringGrad2" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#818cf8"/>
+            <stop offset="1" stop-color="#34d399"/>
+          </linearGradient>
+          <linearGradient id="ringGrad3" x1="60" y1="20" x2="20" y2="60" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#a78bfa"/>
+            <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+          </linearGradient>
+          <radialGradient id="dotGrad" cx="50%" cy="50%" r="50%">
+            <stop stop-color="#c4b5fd"/>
+            <stop offset="1" stop-color="#7c3aed"/>
+          </radialGradient>
+        </defs>
+      </svg>
+      <p class="loader__label">HOANG VU</p>
+    </div>
+  </div>
+
+  <!-- ============ BACKGROUND ============ -->
+  <div class="bg-canvas">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- ============ THEME TOGGLE ============ -->
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/>
+      <line x1="12" y1="1" x2="12" y2="3"/>
+      <line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/>
+      <line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>
+  </button>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="main" id="main">
+
+    <!-- PROFILE HEADER CARD -->
+    <section class="card card--profile reveal">
+      <div class="card__chrome">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="card__title-bar">profile.json</span>
+      </div>
+      <div class="profile">
+        <div class="profile__avatar-wrap">
+          <div class="profile__avatar-ring"></div>
+          <div class="profile__avatar">
+            <img src="https://i.postimg.cc/bNjRpDNG/Screenshot-20260501-153431-Tik-Tok.png" alt="Hoang Vu" />
+          </div>
+          <div class="profile__status-dot"></div>
+        </div>
+        <div class="profile__info">
+          <h1 class="profile__name">Bon Dep Try</h1>
+          <p class="profile__handle">@hoangvudev</p>
+          <p class="profile__bio">CUNG CẤP CHỨNG CHỈ ESIGN - MAP IOS & ANDROID - CUNG CẤP PREMIUM & PRO & PLUS - ChatGPT & GEMINI...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO BOX CARD -->
+    <section class="card card--info reveal">
+      <div class="card__chrome">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="card__title-bar">contact.md</span>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>hoangvu@dev.vn</span>
+        </div>
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Ho Chi Minh City, Vietnam</span>
+        </div>
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>hoangvu.xyz</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL GRID CARDS -->
+    <section class="card card--section reveal">
+      <div class="card__chrome">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="card__title-bar">social_links/</span>
+      </div>
+      <p class="section__label">Mạng xã hội</p>
+      <div class="grid">
+
+        <!-- TikTok -->
+        <div class="link-card reveal-stagger" data-href="https://tiktok.com">
+          <div class="link-card__top">
+            <div class="link-card__icon" style="--icon-color:#fff;--icon-bg:#010101">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/>
+              </svg>
+            </div>
+            <div class="link-card__meta">
+              <h3>TikTok</h3>
+              <div class="link-card__counter">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span class="counter" data-target="8800">8.8K</span>
+              </div>
+            </div>
+          </div>
+          <button class="visit-btn" onclick="visitLink(event,'https://tiktok.com')">
+            <span>Visit</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </button>
+          <div class="link-card__glow"></div>
+        </div>
+
+        <!-- Telegram -->
+        <div class="link-card reveal-stagger" data-href="https://t.me/hoangvu">
+          <div class="link-card__top">
+            <div class="link-card__icon" style="--icon-color:#fff;--icon-bg:#26a5e4">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+            </div>
+            <div class="link-card__meta">
+              <h3>Telegram</h3>
+              <div class="link-card__counter">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span class="counter" data-target="5200">5.2K</span>
+              </div>
+            </div>
+          </div>
+          <button class="visit-btn" onclick="visitLink(event,'https://t.me/hoangvu')">
+            <span>Visit</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </button>
+          <div class="link-card__glow"></div>
+        </div>
+
+        <!-- Discord -->
+        <div class="link-card reveal-stagger" data-href="https://discord.gg/hoangvu">
+          <div class="link-card__top">
+            <div class="link-card__icon" style="--icon-color:#fff;--icon-bg:#5865f2">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.054a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </div>
+            <div class="link-card__meta">
+              <h3>Discord</h3>
+              <div class="link-card__counter">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span class="counter" data-target="3800">3.8K</span>
+              </div>
+            </div>
+          </div>
+          <button class="visit-btn" onclick="visitLink(event,'https://discord.gg/hoangvu')">
+            <span>Visit</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </button>
+          <div class="link-card__glow"></div>
+        </div>
+
+        <!-- Zalo -->
+        <div class="link-card reveal-stagger" data-href="https://zalo.me/hoangvu">
+          <div class="link-card__top">
+            <div class="link-card__icon" style="--icon-color:#fff;--icon-bg:#0068ff">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="4" y="34" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="white" letter-spacing="-1">Za</text>
+                <text x="26" y="34" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="white" letter-spacing="-1">lo</text>
+              </svg>
+            </div>
+            <div class="link-card__meta">
+              <h3>Zalo</h3>
+              <div class="link-card__counter">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span class="counter" data-target="2100">2.1K</span>
+              </div>
+            </div>
+          </div>
+          <button class="visit-btn" onclick="visitLink(event,'https://zalo.me/hoangvu')">
+            <span>Visit</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </button>
+          <div class="link-card__glow"></div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ANALYTICS CARD -->
+    <section class="card card--analytics reveal">
+      <div class="card__chrome">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="card__title-bar">analytics.live</span>
+      </div>
+      <div class="analytics">
+        <div class="analytics__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          <div>
+            <span class="analytics__num" data-target="134892" id="viewCount">134,892</span>
+            <span class="analytics__label">Profile Views</span>
+          </div>
+        </div>
+        <div class="analytics__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101"/><path d="M14.828 14.828a4 4 0 015.656 0l.5.5a4 4 0 010 5.656l-4 4a4 4 0 01-5.656-5.656l1.1-1.1"/></svg>
+          <div>
+            <span class="analytics__num" data-target="2847" id="clickCount">2,847</span>
+            <span class="analytics__label">Link Clicks</span>
+          </div>
+        </div>
+        <div class="analytics__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          <div>
+            <span class="analytics__num" id="onlineCount">247</span>
+            <span class="analytics__label">Online Now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal">
+      <p>Built with precision by <strong>Hoang Vu</strong></p>
+      <p class="footer__copy">© 2025 — All rights reserved</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
